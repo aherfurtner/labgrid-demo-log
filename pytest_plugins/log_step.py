@@ -1,6 +1,12 @@
 import logging
 import platform
+import sys
 import time
+
+import pytest
+from labgrid.logging import StepLogger
+
+from .common import TEST_EVENT_LOGS_KEY, ensure_report_state
 
 
 _COMMAND_STEP_TITLES = {"run", "run_check"}
@@ -104,3 +110,28 @@ class RunSummaryFilter(logging.Filter):
         state["step_emitted"] = True
         state["last_was_done"] = is_done
         return True
+
+
+@pytest.hookimpl(trylast=True)
+def pytest_configure(config):
+    ensure_report_state(config)
+    StepLogger._length_limit = sys.maxsize
+    event_logs = config.stash[TEST_EVENT_LOGS_KEY]
+    logging.getLogger("StepLogger").addFilter(RunSummaryFilter(event_logs))
+
+    logging_plugin = config.pluginmanager.getplugin("logging-plugin")
+    if logging_plugin:
+        plain = logging.Formatter("%(message)s")
+        logging_plugin.log_cli_handler.setFormatter(plain)
+        logging_plugin.log_file_handler.setFormatter(plain)
+        logging_plugin.report_handler.setFormatter(plain)
+
+
+@pytest.hookimpl
+def pytest_runtest_setup(item):
+    reset_test_state(item.nodeid)
+
+
+@pytest.hookimpl
+def pytest_runtest_teardown(item):
+    reset_test_state()

@@ -2,12 +2,19 @@ import re
 from html import escape
 from pathlib import Path
 
+import pytest
+
+from .common import HTML_REPORT_PATH_KEY, TEST_EVENT_LOGS_KEY, TEST_RESULTS_KEY, ensure_report_state
+
 
 _HTML_HEADER_LINE_RE = re.compile(r"^\d{2}:\d{2}:\d{2}\s-+")
 _STEP_DONE_RE = re.compile(r"^Step Done: (?P<cmd>.+?)\s+(PASS|FAIL)$")
+_HTML_REPORT_PATH = None
+_TEST_EVENT_LOGS = None
+_TEST_RESULTS = None
 
 
-def add_pytest_options(parser):
+def pytest_addoption(parser):
     parser.addoption(
         "--log-html",
         action="store",
@@ -15,14 +22,6 @@ def add_pytest_options(parser):
         default=None,
         help="write a simple HTML report with test result + step primitives",
     )
-
-
-def update_html_report(path, nodeid, outcome, test_event_logs, test_results):
-    test_results[nodeid] = {
-        "status": outcome,
-        "logs": list(test_event_logs.get(nodeid, [])),
-    }
-    _render_html_report(path, test_results)
 
 
 def _format_html_step_blocks(lines):
@@ -170,3 +169,24 @@ def _render_html_report(path, test_results):
     report_file = Path(path)
     report_file.parent.mkdir(parents=True, exist_ok=True)
     report_file.write_text(html, encoding="utf-8")
+
+
+@pytest.hookimpl(trylast=True)
+def pytest_configure(config):
+    ensure_report_state(config)
+    config.stash[HTML_REPORT_PATH_KEY] = config.getoption("log_html")
+    global _HTML_REPORT_PATH, _TEST_EVENT_LOGS, _TEST_RESULTS
+    _HTML_REPORT_PATH = config.stash[HTML_REPORT_PATH_KEY]
+    _TEST_EVENT_LOGS = config.stash[TEST_EVENT_LOGS_KEY]
+    _TEST_RESULTS = config.stash[TEST_RESULTS_KEY]
+
+
+@pytest.hookimpl
+def pytest_runtest_logreport(report):
+    if report.when != "call" or not _HTML_REPORT_PATH:
+        return
+    _TEST_RESULTS[report.nodeid] = {
+        "status": report.outcome,
+        "logs": list(_TEST_EVENT_LOGS.get(report.nodeid, [])),
+    }
+    _render_html_report(_HTML_REPORT_PATH, _TEST_RESULTS)
