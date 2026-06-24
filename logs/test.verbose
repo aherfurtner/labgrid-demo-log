@@ -1,0 +1,29 @@
+Test: bb (tests/test_echo.py::test_echo_command)
+00:22:45 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: bb (tests/test_fail.py::test_intentional_failure)
+00:22:45 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: bb (tests/test_false.py::test_false_command)
+00:22:45 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: bb (tests/test_true.py::test_true_command)
+00:22:45 -------------------------------------------------------
+Step Start: true
+Step Done: true PASS
+Test: bb (tests/test_uname.py::test_uname_command)
+00:22:45 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname -a
+Step Done: uname -a PASS
+stdout:
+Linux fake-target 6.1.0-labgrid #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux

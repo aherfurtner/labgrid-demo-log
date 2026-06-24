@@ -1,0 +1,14 @@
+Labgrid Console Logfile for main
+Logfile started at 2026-06-25 00:22:45.759437
+=== Log starts here ===
+root@fake:~# echo "hello"
+hello
+root@fake:~# false
+[exit:1]
+root@fake:~# false
+[exit:1]
+root@fake:~# true
+root@fake:~# uname
+Linux
+root@fake:~# uname -a
+Linux fake-target 6.1.0-labgrid #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux

@@ -1,0 +1,5 @@
+Test Passed: tests/test_echo.py::test_echo_command
+Test Failed: tests/test_fail.py::test_intentional_failure
+Test Passed: tests/test_false.py::test_false_command
+Test Passed: tests/test_true.py::test_true_command
+Test Passed: tests/test_uname.py::test_uname_command
