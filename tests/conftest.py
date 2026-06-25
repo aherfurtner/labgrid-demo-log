@@ -13,6 +13,7 @@ pytest_plugins = [
     "pytest_plugins.log_step",
     "pytest_plugins.log_summary",
     "pytest_plugins.log_html",
+    "pytest_plugins.log_archive",
 ]
 
 
