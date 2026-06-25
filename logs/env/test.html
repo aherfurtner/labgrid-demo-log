@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pytest Labgrid Test Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <style>
+    body { margin: 24px; }
+    pre { margin: 0; white-space: pre-wrap; }
+    code.language-bash {
+      display: block;
+      background: #f3f5f7;
+      border: 1px solid #e1e4e8;
+      border-radius: 4px;
+      padding: 10px 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Finished</h1>
+  <div class="alert alert-danger" role="alert">
+    Total Tests: 5<br>
+    Passed: 4<br>
+    Failed: 1<br>
+    Skipped: 0
+  </div>
+
+  <h1>Summary</h1>
+  <table class="table">
+    <thead>
+      <tr><th scope="col">Step</th><th scope="col">Status</th></tr>
+    </thead>
+    <tbody>
+      <tr class=''><td><a href='#teststest_echopytest_echo_command'>test_echo_command</a></td><td>PASSED</td></tr><tr class='alert-danger'><td><a href='#teststest_failpytest_intentional_failure'>test_intentional_failure</a></td><td>FAILED</td></tr><tr class=''><td><a href='#teststest_falsepytest_false_command'>test_false_command</a></td><td>PASSED</td></tr><tr class=''><td><a href='#teststest_truepytest_true_command'>test_true_command</a></td><td>PASSED</td></tr><tr class=''><td><a href='#teststest_unamepytest_uname_command'>test_uname_command</a></td><td>PASSED</td></tr>
+    </tbody>
+  </table>
+
+  <h1>Detailed Log</h1>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr><th scope="col">Step</th><th scope="col">Status</th><th scope="col">Log</th></tr>
+    </thead>
+    <tbody>
+      <tr class=''><td id='teststest_echopytest_echo_command'>test_echo_command</td><td>PASSED</td><td><pre><code class='language-bash'>------------------------------
+$ echo &quot;hello&quot;
+
+stdout:
+hello</code></pre></td></tr><tr class='alert-danger'><td id='teststest_failpytest_intentional_failure'>test_intentional_failure</td><td>FAILED</td><td><pre><code class='language-bash'>------------------------------
+$ false</code></pre></td></tr><tr class=''><td id='teststest_falsepytest_false_command'>test_false_command</td><td>PASSED</td><td><pre><code class='language-bash'>------------------------------
+$ false</code></pre></td></tr><tr class=''><td id='teststest_truepytest_true_command'>test_true_command</td><td>PASSED</td><td><pre><code class='language-bash'>------------------------------
+$ true</code></pre></td></tr><tr class=''><td id='teststest_unamepytest_uname_command'>test_uname_command</td><td>PASSED</td><td><pre><code class='language-bash'>------------------------------
+$ uname
+
+stdout:
+Linux
+
+------------------------------
+$ uname -a
+
+stdout:
+Linux imx8qxp-var-som 6.6.138-var-lts-next-g76c877bc7a86 #1 SMP PREEMPT Fri May 22 16:47:09 UTC 2026 aarch64 GNU/Linux</code></pre></td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

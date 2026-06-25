@@ -1,0 +1,33 @@
+Labgrid Console Logfile for main
+Logfile started at 2026-06-25 10:08:47.484924
+=== Log starts here ===
+
+root@imx8qxp-var-som:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?" ; }
+root@imx8qxp-var-som:~# echo 'XWXO''WAGAGH'
+XWXOWAGAGH
+root@imx8qxp-var-som:~# MARKER='ZYPS''XUEEZQ' run 'echo "hello"'
+ZYPSXUEEZQhello
+ZYPSXUEEZQ 0
+root@imx8qxp-var-som:~# echo 'NBJS''CVKUHG'
+NBJSCVKUHG
+root@imx8qxp-var-som:~# MARKER='ACAA''TALHOC' run false
+ACAATALHOCACAATALHOC 1
+root@imx8qxp-var-som:~# echo 'UKZY''TCSYHN'
+UKZYTCSYHN
+root@imx8qxp-var-som:~# MARKER='NKWV''GTCPMV' run false
+NKWVGTCPMVNKWVGTCPMV 1
+root@imx8qxp-var-som:~# echo 'GXXJ''YQBHLK'
+GXXJYQBHLK
+root@imx8qxp-var-som:~# MARKER='VUCA''ZOVBBP' run true
+VUCAZOVBBPVUCAZOVBBP 0
+root@imx8qxp-var-som:~# echo 'VBJW''HNGVSC'
+VBJWHNGVSC
+root@imx8qxp-var-som:~# MARKER='OXWH''PAJGTF' run uname
+OXWHPAJGTFLinux
+OXWHPAJGTF 0
+root@imx8qxp-var-som:~# echo 'GPBM''CZLFBE'
+GPBMCZLFBE
+root@imx8qxp-var-som:~# MARKER='TOBT''FXKYVN' run 'uname -a'
+TOBTFXKYVNLinux imx8qxp-var-som 6.6.138-var-lts-next-g76c877bc7a86 #1 SMP PREEMPT Fri May 22 16:47:09 UTC 2026 aarch64 GNU/Linux
+TOBTFXKYVN 0
+root@imx8qxp-var-som:~# 

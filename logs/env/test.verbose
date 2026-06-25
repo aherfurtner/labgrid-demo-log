@@ -1,0 +1,29 @@
+Test: imx8mm-var-dart (tests/test_echo.py::test_echo_command)
+10:08:47 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: imx8mm-var-dart (tests/test_fail.py::test_intentional_failure)
+10:08:47 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: imx8mm-var-dart (tests/test_false.py::test_false_command)
+10:08:47 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: imx8mm-var-dart (tests/test_true.py::test_true_command)
+10:08:47 -------------------------------------------------------
+Step Start: true
+Step Done: true PASS
+Test: imx8mm-var-dart (tests/test_uname.py::test_uname_command)
+10:08:48 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname -a
+Step Done: uname -a PASS
+stdout:
+Linux imx8qxp-var-som 6.6.138-var-lts-next-g76c877bc7a86 #1 SMP PREEMPT Fri May 22 16:47:09 UTC 2026 aarch64 GNU/Linux
