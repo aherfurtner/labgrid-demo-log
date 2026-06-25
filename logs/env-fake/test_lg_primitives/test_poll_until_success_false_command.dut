@@ -1,0 +1,8 @@
+Test: bb (tests/test_lg_primitives.py::test_poll_until_success_false_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ false
+Step Done: dut$ false FAIL
+
+Step Start: dut$ false
+Step Done: dut$ false FAIL

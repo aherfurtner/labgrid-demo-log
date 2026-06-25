@@ -1,0 +1,5 @@
+Test: bb (tests/test_true.py::test_true_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ true
+Step Done: dut$ true PASS

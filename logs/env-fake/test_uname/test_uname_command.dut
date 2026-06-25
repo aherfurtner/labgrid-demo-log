@@ -1,0 +1,12 @@
+Test: bb (tests/test_uname.py::test_uname_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname -a
+Step Done: dut$ uname -a PASS
+stdout:
+Linux fake-target 6.1.0-labgrid #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux

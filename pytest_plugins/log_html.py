@@ -24,6 +24,12 @@ def pytest_addoption(parser):
     )
 
 
+def _render_command(cmd):
+    if re.match(r"^\S+\$\s", cmd):
+        return cmd
+    return f"$ {cmd}"
+
+
 def _format_html_step_blocks(lines):
     commands = []
     current = None
@@ -63,7 +69,7 @@ def _format_html_step_blocks(lines):
     formatted = []
     for item in commands:
         formatted.append("------------------------------")
-        formatted.append(f"$ {item['cmd']}")
+        formatted.append(_render_command(item["cmd"]))
         formatted.append("")
         if item["stdout"]:
             formatted.append("stdout:")

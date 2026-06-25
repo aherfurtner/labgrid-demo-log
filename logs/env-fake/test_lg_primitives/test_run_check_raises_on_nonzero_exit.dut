@@ -1,0 +1,5 @@
+Test: bb (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ false
+Step Done: dut$ false PASS

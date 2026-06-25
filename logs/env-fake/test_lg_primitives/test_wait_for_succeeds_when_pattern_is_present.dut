@@ -1,0 +1,7 @@
+Test: bb (tests/test_lg_primitives.py::test_wait_for_succeeds_when_pattern_is_present)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ echo "ready"
+Step Done: dut$ echo "ready" PASS
+stdout:
+ready

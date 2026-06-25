@@ -1,0 +1,32 @@
+Test: bb (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears_expected)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux
+
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
+stdout:
+Linux

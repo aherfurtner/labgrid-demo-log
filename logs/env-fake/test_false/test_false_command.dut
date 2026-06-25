@@ -1,0 +1,5 @@
+Test: bb (tests/test_false.py::test_false_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ false
+Step Done: dut$ false FAIL

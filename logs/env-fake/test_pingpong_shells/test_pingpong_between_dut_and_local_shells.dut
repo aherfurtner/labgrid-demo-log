@@ -1,0 +1,12 @@
+Test: bb (tests/test_pingpong_shells.py::test_pingpong_between_dut_and_local_shells)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ echo "dut-1"
+Step Done: dut$ echo "dut-1" PASS
+stdout:
+dut-1
+
+Step Start: dut$ echo "dut-2"
+Step Done: dut$ echo "dut-2" PASS
+stdout:
+dut-2

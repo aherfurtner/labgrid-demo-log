@@ -1,5 +1,5 @@
 Labgrid Console Logfile for main
-Logfile started at 2026-06-25 12:56:30.671491
+Logfile started at 2026-06-25 18:10:01.413817
 === Log starts here ===
 root@fake:~# echo "hello"
 hello
@@ -7,6 +7,11 @@ root@fake:~# false
 [exit:1]
 root@fake:~# false
 [exit:1]
+Labgrid Console Logfile for main
+Logfile started at 2026-06-25 18:10:01.438928
+=== Log starts here ===
+local$ echo "host-ok"
+host-ok
 root@fake:~# echo "hello"
 hello
 root@fake:~# echo "hello"
@@ -56,6 +61,14 @@ root@fake:~# false
 [exit:1]
 root@fake:~# false
 [exit:1]
+root@fake:~# echo "dut-1"
+dut-1
+local$ echo "local-1"
+local-1
+root@fake:~# echo "dut-2"
+dut-2
+local$ echo "local-2"
+local-2
 root@fake:~# true
 root@fake:~# uname
 Linux

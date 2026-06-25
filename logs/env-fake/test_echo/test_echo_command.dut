@@ -1,0 +1,7 @@
+Test: bb (tests/test_echo.py::test_echo_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ echo "hello"
+Step Done: dut$ echo "hello" PASS
+stdout:
+hello

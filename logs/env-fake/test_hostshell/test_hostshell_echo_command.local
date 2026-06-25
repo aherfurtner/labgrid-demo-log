@@ -1,0 +1,7 @@
+Test: bb (tests/test_hostshell.py::test_hostshell_echo_command)
+18:10:01 -------------------------------------------------------
+
+Step Start: local$ echo "host-ok"
+Step Done: local$ echo "host-ok" PASS
+stdout:
+host-ok

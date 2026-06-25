@@ -1,0 +1,5 @@
+Test: bb (tests/test_fail.py::test_intentional_failure)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ false
+Step Done: dut$ false FAIL

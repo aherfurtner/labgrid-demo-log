@@ -1,153 +1,180 @@
 Test: bb (tests/test_echo.py::test_echo_command)
-12:56:30 -------------------------------------------------------
-Step Start: echo "hello"
-Step Done: echo "hello" PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ echo "hello"
+Step Done: dut$ echo "hello" PASS
 stdout:
 hello
 Test: bb (tests/test_fail.py::test_intentional_failure)
-12:56:30 -------------------------------------------------------
-Step Start: false
-Step Done: false FAIL
+18:10:01 -------------------------------------------------------
+Step Start: dut$ false
+Step Done: dut$ false FAIL
 Test: bb (tests/test_false.py::test_false_command)
-12:56:30 -------------------------------------------------------
-Step Start: false
-Step Done: false FAIL
+18:10:01 -------------------------------------------------------
+Step Start: dut$ false
+Step Done: dut$ false FAIL
+Test: bb (tests/test_hostshell.py::test_hostshell_echo_command)
+18:10:01 -------------------------------------------------------
+Step Start: local$ echo "host-ok"
+Step Done: local$ echo "host-ok" PASS
+stdout:
+host-ok
 Test: bb (tests/test_lg_primitives.py::test_run_success_returns_stdout_stderr_and_returncode)
-12:56:30 -------------------------------------------------------
-Step Start: echo "hello"
-Step Done: echo "hello" PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ echo "hello"
+Step Done: dut$ echo "hello" PASS
 stdout:
 hello
 Test: bb (tests/test_lg_primitives.py::test_run_check_success_returns_stdout)
-12:56:30 -------------------------------------------------------
-Step Start: echo "hello"
-Step Done: echo "hello" PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ echo "hello"
+Step Done: dut$ echo "hello" PASS
 stdout:
 hello
 Test: bb (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit_expected)
-12:56:30 -------------------------------------------------------
-Step Start: false
-Step Done: false PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ false
+Step Done: dut$ false PASS
 Test: bb (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit)
-12:56:30 -------------------------------------------------------
-Step Start: false
-Step Done: false PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ false
+Step Done: dut$ false PASS
 Test: bb (tests/test_lg_primitives.py::test_wait_for_succeeds_when_pattern_is_present)
-12:56:30 -------------------------------------------------------
-Step Start: echo "ready"
-Step Done: echo "ready" PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ echo "ready"
+Step Done: dut$ echo "ready" PASS
 stdout:
 ready
 Test: bb (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears_expected)
-12:56:30 -------------------------------------------------------
-Step Start: uname
-Step Done: uname PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 Test: bb (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears)
-12:56:30 -------------------------------------------------------
-Step Start: uname
-Step Done: uname PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname
-Step Done: uname PASS
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 Test: bb (tests/test_lg_primitives.py::test_poll_until_success_true_command)
-12:56:30 -------------------------------------------------------
-Step Start: true
-Step Done: true PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ true
+Step Done: dut$ true PASS
 Test: bb (tests/test_lg_primitives.py::test_poll_until_success_false_command)
-12:56:30 -------------------------------------------------------
-Step Start: false
-Step Done: false FAIL
+18:10:01 -------------------------------------------------------
+Step Start: dut$ false
+Step Done: dut$ false FAIL
 
-Step Start: false
-Step Done: false FAIL
+Step Start: dut$ false
+Step Done: dut$ false FAIL
+Test: bb (tests/test_pingpong_shells.py::test_pingpong_between_dut_and_local_shells)
+18:10:01 -------------------------------------------------------
+Step Start: dut$ echo "dut-1"
+Step Done: dut$ echo "dut-1" PASS
+stdout:
+dut-1
+
+Step Start: local$ echo "local-1"
+Step Done: local$ echo "local-1" PASS
+stdout:
+local-1
+
+Step Start: dut$ echo "dut-2"
+Step Done: dut$ echo "dut-2" PASS
+stdout:
+dut-2
+
+Step Start: local$ echo "local-2"
+Step Done: local$ echo "local-2" PASS
+stdout:
+local-2
 Test: bb (tests/test_true.py::test_true_command)
-12:56:30 -------------------------------------------------------
-Step Start: true
-Step Done: true PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ true
+Step Done: dut$ true PASS
 Test: bb (tests/test_uname.py::test_uname_command)
-12:56:30 -------------------------------------------------------
-Step Start: uname
-Step Done: uname PASS
+18:10:01 -------------------------------------------------------
+Step Start: dut$ uname
+Step Done: dut$ uname PASS
 stdout:
 Linux
 
-Step Start: uname -a
-Step Done: uname -a PASS
+Step Start: dut$ uname -a
+Step Done: dut$ uname -a PASS
 stdout:
 Linux fake-target 6.1.0-labgrid #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux

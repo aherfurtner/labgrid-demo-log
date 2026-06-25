@@ -1,0 +1,7 @@
+Test: bb (tests/test_lg_primitives.py::test_run_success_returns_stdout_stderr_and_returncode)
+18:10:01 -------------------------------------------------------
+
+Step Start: dut$ echo "hello"
+Step Done: dut$ echo "hello" PASS
+stdout:
+hello
