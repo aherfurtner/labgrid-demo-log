@@ -1,7 +1,9 @@
 imports:
   - ./labgrid_addons/fakeshell.py
+  - ./labgrid_addons/localshell.py
 
 targets:
   main:
     drivers:
       FakeShellDriver: {}
+      LocalShellDriver: {}
