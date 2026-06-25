@@ -1,5 +1,15 @@
 Test Passed: tests/test_echo.py::test_echo_command
 Test Failed: tests/test_fail.py::test_intentional_failure
 Test Passed: tests/test_false.py::test_false_command
+Test Passed: tests/test_lg_primitives.py::test_run_success_returns_stdout_stderr_and_returncode
+Test Passed: tests/test_lg_primitives.py::test_run_check_success_returns_stdout
+Test Passed: tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit_expected
+Test Failed: tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit
+Test Passed: tests/test_lg_primitives.py::test_wait_for_succeeds_when_pattern_is_present
+Test Passed: tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears_expected
+Test Failed: tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears
+Test Passed: tests/test_lg_primitives.py::test_poll_until_success_true_command
+Test Passed: tests/test_lg_primitives.py::test_poll_until_success_false_command
+Test Passed: tests/test_lg_primitives.py::test_get_status_reports_active
 Test Passed: tests/test_true.py::test_true_command
 Test Passed: tests/test_uname.py::test_uname_command

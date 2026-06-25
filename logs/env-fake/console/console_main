@@ -1,8 +1,57 @@
 Labgrid Console Logfile for main
-Logfile started at 2026-06-25 12:11:28.228375
+Logfile started at 2026-06-25 12:56:30.671491
 === Log starts here ===
 root@fake:~# echo "hello"
 hello
+root@fake:~# false
+[exit:1]
+root@fake:~# false
+[exit:1]
+root@fake:~# echo "hello"
+hello
+root@fake:~# echo "hello"
+hello
+root@fake:~# false
+[exit:1]
+root@fake:~# false
+[exit:1]
+root@fake:~# echo "ready"
+ready
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# uname
+Linux
+root@fake:~# true
 root@fake:~# false
 [exit:1]
 root@fake:~# false

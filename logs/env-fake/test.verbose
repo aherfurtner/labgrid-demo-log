@@ -1,23 +1,147 @@
 Test: bb (tests/test_echo.py::test_echo_command)
-12:11:28 -------------------------------------------------------
+12:56:30 -------------------------------------------------------
 Step Start: echo "hello"
 Step Done: echo "hello" PASS
 stdout:
 hello
 Test: bb (tests/test_fail.py::test_intentional_failure)
-12:11:28 -------------------------------------------------------
+12:56:30 -------------------------------------------------------
 Step Start: false
 Step Done: false FAIL
 Test: bb (tests/test_false.py::test_false_command)
-12:11:28 -------------------------------------------------------
+12:56:30 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: bb (tests/test_lg_primitives.py::test_run_success_returns_stdout_stderr_and_returncode)
+12:56:30 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: bb (tests/test_lg_primitives.py::test_run_check_success_returns_stdout)
+12:56:30 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: bb (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit_expected)
+12:56:30 -------------------------------------------------------
+Step Start: false
+Step Done: false PASS
+Test: bb (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit)
+12:56:30 -------------------------------------------------------
+Step Start: false
+Step Done: false PASS
+Test: bb (tests/test_lg_primitives.py::test_wait_for_succeeds_when_pattern_is_present)
+12:56:30 -------------------------------------------------------
+Step Start: echo "ready"
+Step Done: echo "ready" PASS
+stdout:
+ready
+Test: bb (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears_expected)
+12:56:30 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+Test: bb (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears)
+12:56:30 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+Test: bb (tests/test_lg_primitives.py::test_poll_until_success_true_command)
+12:56:30 -------------------------------------------------------
+Step Start: true
+Step Done: true PASS
+Test: bb (tests/test_lg_primitives.py::test_poll_until_success_false_command)
+12:56:30 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+
 Step Start: false
 Step Done: false FAIL
 Test: bb (tests/test_true.py::test_true_command)
-12:11:28 -------------------------------------------------------
+12:56:30 -------------------------------------------------------
 Step Start: true
 Step Done: true PASS
 Test: bb (tests/test_uname.py::test_uname_command)
-12:11:28 -------------------------------------------------------
+12:56:30 -------------------------------------------------------
 Step Start: uname
 Step Done: uname PASS
 stdout:

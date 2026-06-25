@@ -1,33 +1,83 @@
 Labgrid Console Logfile for main
-Logfile started at 2026-06-25 10:08:47.484924
+Logfile started at 2026-06-25 10:56:31.981662
 === Log starts here ===
 
 root@imx8qxp-var-som:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?" ; }
-root@imx8qxp-var-som:~# echo 'XWXO''WAGAGH'
-XWXOWAGAGH
-root@imx8qxp-var-som:~# MARKER='ZYPS''XUEEZQ' run 'echo "hello"'
-ZYPSXUEEZQhello
-ZYPSXUEEZQ 0
-root@imx8qxp-var-som:~# echo 'NBJS''CVKUHG'
-NBJSCVKUHG
-root@imx8qxp-var-som:~# MARKER='ACAA''TALHOC' run false
-ACAATALHOCACAATALHOC 1
-root@imx8qxp-var-som:~# echo 'UKZY''TCSYHN'
-UKZYTCSYHN
-root@imx8qxp-var-som:~# MARKER='NKWV''GTCPMV' run false
-NKWVGTCPMVNKWVGTCPMV 1
-root@imx8qxp-var-som:~# echo 'GXXJ''YQBHLK'
-GXXJYQBHLK
-root@imx8qxp-var-som:~# MARKER='VUCA''ZOVBBP' run true
-VUCAZOVBBPVUCAZOVBBP 0
-root@imx8qxp-var-som:~# echo 'VBJW''HNGVSC'
-VBJWHNGVSC
-root@imx8qxp-var-som:~# MARKER='OXWH''PAJGTF' run uname
-OXWHPAJGTFLinux
-OXWHPAJGTF 0
-root@imx8qxp-var-som:~# echo 'GPBM''CZLFBE'
-GPBMCZLFBE
-root@imx8qxp-var-som:~# MARKER='TOBT''FXKYVN' run 'uname -a'
-TOBTFXKYVNLinux imx8qxp-var-som 6.6.138-var-lts-next-g76c877bc7a86 #1 SMP PREEMPT Fri May 22 16:47:09 UTC 2026 aarch64 GNU/Linux
-TOBTFXKYVN 0
+root@imx8qxp-var-som:~# echo 'AAWQ''WXZXSA'
+AAWQWXZXSA
+root@imx8qxp-var-som:~# MARKER='YWBG''LNXASS' run 'echo "hello"'
+YWBGLNXASShello
+YWBGLNXASS 0
+root@imx8qxp-var-som:~# echo 'CAAW''BAAHOJ'
+CAAWBAAHOJ
+root@imx8qxp-var-som:~# MARKER='YCEC''JJOVPL' run false
+YCECJJOVPLYCECJJOVPL 1
+root@imx8qxp-var-som:~# echo 'KNTV''VGGOHN'
+KNTVVGGOHN
+root@imx8qxp-var-som:~# MARKER='CGGP''MPSKOC' run false
+CGGPMPSKOCCGGPMPSKOC 1
+root@imx8qxp-var-som:~# echo 'ULVH''ZYLWVG'
+ULVHZYLWVG
+root@imx8qxp-var-som:~# MARKER='KTPJ''AMBXUU' run 'echo "hello"'
+KTPJAMBXUUhello
+KTPJAMBXUU 0
+root@imx8qxp-var-som:~# echo 'QCWM''CCMLWX'
+QCWMCCMLWX
+root@imx8qxp-var-som:~# MARKER='FNAJ''PJJAYW' run 'echo "hello"'
+FNAJPJJAYWhello
+FNAJPJJAYW 0
+root@imx8qxp-var-som:~# echo 'SWCE''LTWLPW'
+SWCELTWLPW
+root@imx8qxp-var-som:~# MARKER='AHQB''ZKUAZB' run false
+AHQBZKUAZBAHQBZKUAZB 1
+root@imx8qxp-var-som:~# echo 'WGMK''JNLJGA'
+WGMKJNLJGA
+root@imx8qxp-var-som:~# MARKER='ZHLT''YCELYN' run false
+ZHLTYCELYNZHLTYCELYN 1
+root@imx8qxp-var-som:~# echo 'LQQV''UPKYBT'
+LQQVUPKYBT
+root@imx8qxp-var-som:~# MARKER='QLQQ''KKBXOZ' run 'echo "ready"'
+QLQQKKBXOZready
+QLQQKKBXOZ 0
+root@imx8qxp-var-som:~# echo 'WACO''TVOJLA'
+WACOTVOJLA
+root@imx8qxp-var-som:~# MARKER='XKGW''UGKSKC' run uname
+XKGWUGKSKCLinux
+XKGWUGKSKC 0
+root@imx8qxp-var-som:~# echo 'FUZT''EONMVT'
+FUZTEONMVT
+root@imx8qxp-var-som:~# MARKER='BZKO''OEBSAH' run uname
+BZKOOEBSAHLinux
+BZKOOEBSAH 0
+root@imx8qxp-var-som:~# echo 'HPJP''QKJEEF'
+HPJPQKJEEF
+root@imx8qxp-var-som:~# MARKER='GHMV''JXABOB' run uname
+GHMVJXABOBLinux
+GHMVJXABOB 0
+root@imx8qxp-var-som:~# echo 'JZUG''VUEAXJ'
+JZUGVUEAXJ
+root@imx8qxp-var-som:~# MARKER='FHPF''ZMPLBW' run true
+FHPFZMPLBWFHPFZMPLBW 0
+root@imx8qxp-var-som:~# echo 'OGBJ''LWWZKE'
+OGBJLWWZKE
+root@imx8qxp-var-som:~# MARKER='EXVC''BFSAKX' run false
+EXVCBFSAKXEXVCBFSAKX 1
+root@imx8qxp-var-som:~# echo 'CKSB''ZYVUZH'
+CKSBZYVUZH
+root@imx8qxp-var-som:~# MARKER='QTBJ''NGXJCO' run false
+QTBJNGXJCOQTBJNGXJCO 1
+root@imx8qxp-var-som:~# echo 'UJYU''QWXBGZ'
+UJYUQWXBGZ
+root@imx8qxp-var-som:~# MARKER='BAWH''HFPOCO' run true
+BAWHHFPOCOBAWHHFPOCO 0
+root@imx8qxp-var-som:~# echo 'KMBO''QCSFBQ'
+KMBOQCSFBQ
+root@imx8qxp-var-som:~# MARKER='KVFJ''UAZWGG' run uname
+KVFJUAZWGGLinux
+KVFJUAZWGG 0
+root@imx8qxp-var-som:~# echo 'MHHA''FCJPWZ'
+MHHAFCJPWZ
+root@imx8qxp-var-som:~# MARKER='LVFH''CGFUVB' run 'uname -a'
+LVFHCGFUVBLinux imx8qxp-var-som 6.6.138-var-lts-next-g76c877bc7a86 #1 SMP PREEMPT Fri May 22 16:47:09 UTC 2026 aarch64 GNU/Linux
+LVFHCGFUVB 0
 root@imx8qxp-var-som:~# 

@@ -1,23 +1,77 @@
 Test: imx8mm-var-dart (tests/test_echo.py::test_echo_command)
-10:08:47 -------------------------------------------------------
+10:56:32 -------------------------------------------------------
 Step Start: echo "hello"
 Step Done: echo "hello" PASS
 stdout:
 hello
 Test: imx8mm-var-dart (tests/test_fail.py::test_intentional_failure)
-10:08:47 -------------------------------------------------------
+10:56:32 -------------------------------------------------------
 Step Start: false
 Step Done: false FAIL
 Test: imx8mm-var-dart (tests/test_false.py::test_false_command)
-10:08:47 -------------------------------------------------------
+10:56:32 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_run_success_returns_stdout_stderr_and_returncode)
+10:56:32 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_run_check_success_returns_stdout)
+10:56:32 -------------------------------------------------------
+Step Start: echo "hello"
+Step Done: echo "hello" PASS
+stdout:
+hello
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit_expected)
+10:56:32 -------------------------------------------------------
+Step Start: false
+Step Done: false PASS
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_run_check_raises_on_nonzero_exit)
+10:56:32 -------------------------------------------------------
+Step Start: false
+Step Done: false PASS
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_wait_for_succeeds_when_pattern_is_present)
+10:56:32 -------------------------------------------------------
+Step Start: echo "ready"
+Step Done: echo "ready" PASS
+stdout:
+ready
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears_expected)
+10:56:32 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_wait_for_raises_when_pattern_never_appears)
+10:56:33 -------------------------------------------------------
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+
+Step Start: uname
+Step Done: uname PASS
+stdout:
+Linux
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_poll_until_success_true_command)
+10:56:33 -------------------------------------------------------
+Step Start: true
+Step Done: true PASS
+Test: imx8mm-var-dart (tests/test_lg_primitives.py::test_poll_until_success_false_command)
+10:56:33 -------------------------------------------------------
+Step Start: false
+Step Done: false FAIL
+
 Step Start: false
 Step Done: false FAIL
 Test: imx8mm-var-dart (tests/test_true.py::test_true_command)
-10:08:47 -------------------------------------------------------
+10:56:33 -------------------------------------------------------
 Step Start: true
 Step Done: true PASS
 Test: imx8mm-var-dart (tests/test_uname.py::test_uname_command)
-10:08:48 -------------------------------------------------------
+10:56:33 -------------------------------------------------------
 Step Start: uname
 Step Done: uname PASS
 stdout:
