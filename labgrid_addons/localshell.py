@@ -1,16 +1,17 @@
 import subprocess
 
 import attr
-from labgrid.driver.commandmixin import CommandMixin
 from labgrid.driver.common import Driver
 from labgrid.factory import target_factory
 from labgrid.protocol import CommandProtocol
 from labgrid.step import step
 
+from labgrid_addons.commandmixinx import CommandMixinX
+
 
 @target_factory.reg_driver
 @attr.s(eq=False)
-class LocalShellDriver(CommandMixin, Driver, CommandProtocol):
+class LocalShellDriver(CommandMixinX, Driver, CommandProtocol):
     shell = attr.ib(default="/bin/sh", validator=attr.validators.instance_of(str))
 
     def __attrs_post_init__(self):

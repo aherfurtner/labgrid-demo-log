@@ -1,14 +1,15 @@
 import attr
-from labgrid.driver.commandmixin import CommandMixin
 from labgrid.driver.common import Driver
 from labgrid.factory import target_factory
 from labgrid.protocol import CommandProtocol
 from labgrid.step import step
 
+from labgrid_addons.commandmixinx import CommandMixinX
+
 
 @target_factory.reg_driver
 @attr.s(eq=False)
-class FakeShellDriver(CommandMixin, Driver, CommandProtocol):
+class FakeShellDriver(CommandMixinX, Driver, CommandProtocol):
     @step(title="write", tag="console", args=["data"])
     def _fake_console_write(self, data):
         del data
